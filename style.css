@@ -1,0 +1,45 @@
+/* body{
+  font: 100% Times New Ro;
+  color:  black;
+} */
+p{
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  margin: 0;
+  padding:0;
+}
+
+#nav_bar{
+  height: 60px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#logo{
+  height : inherit;
+  width : auto;
+  display : block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#background{
+  background-color: #003366;
+  position: absolute;
+  top: 70px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#form{
+  margin-top:2px;
+  background-color: white;
+  display:block;
+  margin-right:auto;
+  margin-left: auto;
+  width: 80%;
+  height: inherit;
+}
