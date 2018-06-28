@@ -5,20 +5,40 @@
   <!-- no favicon -->
   <title>Trades Portal</title>
   <link rel="stylesheet" href="style.css">
+  <script language="javascript">
+      function WriteToFile(passForm) {
+        alert('called');
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var fileLoc = "./sample.csv";
+        var file = fso.CreateTextFile(fileLoc, true);
+        file.writeline(passForm.FirstName.value + ',' +
+                       passForm.LastName.value);
+        file.Close();
+        alert('File created successfully at location: ' + fileLoc);
+       }
+    </script>
 </head>
 
 <body>
-  <div id="nav_bar">
-    <img src="./FormDesignLayouts/image001.png" alt="Sierra Lane Logo" id="logo" >
+    <div id="nav_bar">
+    <img src="./website/image001.png" alt="Sierra Lane Logo" id="logo" >
   </div>
   <div id="background">
+    <form>
     <div id="form">
-      <div>
-        <p>
-          Blah blah blah content
-        </p>
+      <div class="question">
+        <h1>What is your name?</h1>
+        <input type="text" name="FirstName">
+      </div>
+      <hr/>
+      <div id="last_block">
+        <button type="button" class="submit_button">Submit for Now</button>
+        <button type="button" class="submit_button" onclick="WriteToFile(this.form)">Continue</button>
+        <div>
+        </div>
       </div>
     </div>
+    <form>
   </div>
 </body>
 

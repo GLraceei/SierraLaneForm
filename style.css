@@ -11,6 +11,23 @@ body, html {
   padding:0;
 }
 
+hr{
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #003366;
+  margin: 1em 0;
+  padding: 0;
+}
+
+h1{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  color: #003366;
+  font-size: 1.5em;
+  text-align: left;
+}
+
 #nav_bar{
   height: 60px;
   color: white;
@@ -42,4 +59,16 @@ body, html {
   margin-left: auto;
   width: 80%;
   height: inherit;
+}
+
+.question{
+  padding: 5% 10% 5% 10%;
+}
+
+#last_block{
+  padding: 3% 10% 7% 10%;
+}
+
+.submit_button{
+  float:right;
 }
