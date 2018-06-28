@@ -5,7 +5,7 @@
   <!-- no favicon -->
   <title>Trades Portal</title>
   <link rel="stylesheet" href="style.css">
-  <script language="javascript">
+  <!-- <script language="javascript">
       function WriteToFile(passForm) {
         alert('called');
         var fso = new ActiveXObject("Scripting.FileSystemObject");
@@ -16,7 +16,7 @@
         file.Close();
         alert('File created successfully at location: ' + fileLoc);
        }
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -32,8 +32,11 @@
       </div>
       <hr/>
       <div id="last_block">
-        <button type="button" class="continue_button" onclick="WriteToFile(this.form)">Continue</button>
-        <button type="button" class="submit_for_now_button">Submit for Now</button>
+        <div id="buttons">
+          <button type="button" class="submit_for_now_button">Submit for Now</button>
+
+        <button type="button" class="continue_button">Continue</button>
+      </div>
         <div>
         </div>
       </div>
