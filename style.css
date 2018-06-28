@@ -69,6 +69,9 @@ h1{
   padding: 3% 10% 7% 10%;
 }
 
-.submit_button{
-  float:right;
+.submit_for_now_button{
+  float: right;
+}
+.continue_button{
+  float: right;
 }
