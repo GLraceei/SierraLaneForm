@@ -29,32 +29,36 @@
     <div id="form">
       <hr class="hr_2"></hr>
       <div class="title_card">
-        <h1>Contact Information</h1>
-        <p>Please fill this out according to the contact information of the estimator.</p>
+        <h1>Company Information</h1>
       </div>
       <hr/>
 
       <div class="question">
-        <h2>What is your name?</h2>
-        <div class="col_2">
-          <input type="text" name="FirstName" alt="First name.">
-        </div><!-- comment
-         --><div class="col_2">
-          <input type="text" name="LastName" style="margin-left:5%;" alt="Last name.">
-        </div>
+        <h2>Company Name</h2>
+          <input type="text" name="Company Name" alt="CompanyName" style="width:100;">
+
       </div>
       <hr/>
 
-      <div class="question">
-        <h2>Email</h2>
-          <input type="text" name="Email" alt="Email." style="width:100%;">
+        <div class="question">
+        <h2>Applicable Scope of Work </h2> <p>(select all that apply)</p>
+<ul class="checkbox-grid">
+
+
+    <li><input type="checkbox" name="text1" value="value1" /><label for="text1" class="indented-checkbox-text">Electrician</label></li>
+    <li><input type="checkbox" name="text2" value="value2" /><label for="text2" class="indented-checkbox-text">Wood Siding</label></li>
+    <li><input type="checkbox" name="text3" value="value3" /><label for="text3" class="indented-checkbox-text">Flashing & Sheet Metal</label></li>
+    <li><input type="checkbox" name="text4" value="value4" /><label for="text4" class="indented-checkbox-text">Joint Sealer</label></li>
+
+
+
+</ul>
       </div>
       <hr/>
 
       <div id="last_block">
         <div id="buttons">
-        <button type="button" class="continue_button"><a href = "companyinfo.html">
-          Continue</a></button>
+        <button type="button" class="continue_button">Continue</button>
         </div>
       </div>
     </div>
