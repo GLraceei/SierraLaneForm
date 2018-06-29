@@ -30,7 +30,7 @@ h2{
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   color: #003366;
-  font-size: 1.5em;
+  font-size: 1.35em;
   text-align: left;
   margin-top: 0.25em;
   margin-bottom: 0.5em;
@@ -71,6 +71,10 @@ input{
   outline: none;
 }
 
+label{
+  font-size: 1.2em;
+}
+
 #nav_bar{
   height: 60px;
   color: white;
@@ -101,6 +105,10 @@ input{
   margin-left: auto;
   width: 70%;
   height: auto;
+}
+.checkbox{
+  padding: 1em;
+  display:inline-block;
 }
 
 .title_card{
