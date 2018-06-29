@@ -1,10 +1,8 @@
-/* body{
-  font: 100% Times New Ro;
-  color:  black;
-} */
 p{
   margin: 0;
-  padding: 0;
+  padding:0.4em;
+  font-size:1em;
+  color: #336699;
 }
 body, html {
   margin: 0;
@@ -22,10 +20,21 @@ hr{
 
 h1{
   font-family: "Times New Roman", Times, serif;
+  color: #003366;
+  font-size: 1.8em;
+  text-align: left;
+  margin:0;
+}
+
+h2{
+  font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   color: #003366;
   font-size: 1.5em;
   text-align: left;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+
 }
 
 button{
@@ -38,6 +47,18 @@ button{
   padding: 0.5em 1em;
   margin-left: 1em;
   border-radius: 8px;
+}
+
+input{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  border-width: 1px;
+  border-color: #333333;
+  border-radius: 8px;
+  height: 1em;
+  padding: 0.5em;
+  outline: none;
+  width: 90%;
 }
 
 #nav_bar{
@@ -73,25 +94,32 @@ button{
   height: inherit;
 }
 
+.title_card{
+  padding: 2.5em 5em 2.5em 5em;
+}
+
 .question{
-  padding: 3em 4em;
+  padding: 1.5em 5em 3em 5em;
 }
 
 #last_block{
-  padding: 4em 4em;
+  padding: 4em 5em;
   height:auto;
 }
+
 #buttons{
   float:right;
   margin-top:-1em;
 }
-.submit_for_now_button{
-  background-color: #666666;
-  color: #cccccc;
-}
+
 .continue_button{
   background-color: #003366;
+}
 
+.col_2{
+  width:50%;
+  height: auto;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 768px){

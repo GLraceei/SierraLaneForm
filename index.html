@@ -25,19 +25,28 @@
   </div>
   <div id="background">
     <form>
+
     <div id="form">
-      <div class="question">
-        <h1>What is your name?</h1>
-        <input type="text" name="FirstName">
+      <div class="title_card">
+        <h1>Contact Information</h1>
+        <p>Please fill this out according to the contact information of the estimator.</p>
       </div>
       <hr/>
+
+      <div class="question">
+        <h2>What is your name?</h2>
+        <div class="col_2">
+          <input type="text" name="FirstName" alt="First name.">
+        </div><!-- comment
+         --><div class="col_2">
+          <input type="text" name="LastName" style="margin-left:5%;">
+        </div>
+      </div>
+      <hr/>
+
       <div id="last_block">
         <div id="buttons">
-          <button type="button" class="submit_for_now_button">Submit for Now</button>
-
         <button type="button" class="continue_button">Continue</button>
-      </div>
-        <div>
         </div>
       </div>
     </div>
