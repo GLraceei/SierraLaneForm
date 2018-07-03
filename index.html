@@ -5,62 +5,43 @@
   <!-- no favicon -->
   <title>Trades Portal</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <script language="javascript">
-      function WriteToFile(passForm) {
-        alert('called');
-        var fso = new ActiveXObject("Scripting.FileSystemObject");
-        var fileLoc = "./sample.csv";
-        var file = fso.CreateTextFile(fileLoc, true);
-        file.writeline(passForm.FirstName.value + ',' +
-                       passForm.LastName.value);
-        file.Close();
-        alert('File created successfully at location: ' + fileLoc);
-       }
-    </script> -->
 </head>
 
 <body>
-    <div id="nav_bar">
+  <div id="nav_bar">
     <img src="./website/image001.png" alt="Sierra Lane Logo" id="logo" >
   </div>
-  <div id="background">
-    <form>
+  <div id="background" style="position:absolute;">
 
-    <div id="form">
+    <div id="form" style="height:100%; position:relative;">
       <hr class="hr_2"></hr>
-      <div class="title_card">
-        <h1>Contact Information</h1>
-        <p>Please fill this out according to the contact information of the estimator.</p>
-      </div>
-      <hr/>
 
-      <div class="question">
-        <h2>What is your name?</h2>
-        <div class="col_2">
-          <input type="text" name="FirstName" alt="First name.">
-        </div><!-- comment
-         --><div class="col_2">
-          <input type="text" name="LastName" style="margin-left:5%;" alt="Last name.">
-        </div>
+      <div id="welcome_panel">
+        <h3>Welcome</h3>
       </div>
-      <hr/>
-
-      <div class="question">
-        <h2>Email</h2>
-          <input type="text" name="Email" alt="Email." style="width:100%;">
-      </div>
-      <hr/>
 
       <div id="last_block">
+<<<<<<< HEAD
         <div id="buttons">
         <button type="button" class="continue_button"><a href = "companyinfo.html">
           Continue</a></button>
+=======
+        <div id="buttons_start">
+          <form action="./contact_information.html">
+            <button type="submit" class="continue_button start_button" value="Go to Contact Informaion">Get Started</button>
+          </form>
+>>>>>>> e64ca117be394c0bffcdd443c1d2341c68fb166e
         </div>
       </div>
+      <hr class="hr_3"></hr>
+
     </div>
+<<<<<<< HEAD
 
     <hr class="hr_2"></hr>
     <form>
+=======
+>>>>>>> e64ca117be394c0bffcdd443c1d2341c68fb166e
   </div>
 </body>
 
