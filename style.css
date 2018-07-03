@@ -180,3 +180,9 @@ label{
     width: 100%;
   }
 }
+
+.checkbox-grid li {
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
