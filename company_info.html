@@ -26,21 +26,20 @@
     <h2 style="margin-bottom:0em;">Which Province do you predominately service?</h2>
 
   <label><br/>
-  &nbsp;&nbsp;&nbsp; <input type="radio" id="yes" name="province" value="yes" onchange="displayQuestion(this.value)"/> Ontario</label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <label for "BC" style = "font-size:1.2em; font-family: Times New Roman;">
-    <input type="radio" id="no" name="province" value="no" onchange="displayQuestion(this.value)" /> British Columbia</label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <label for "AB" style = "font-size:1.2em; font-family: Times New Roman;">
-    <input type="radio" id="no" name="province" value="no" onchange="displayQuestion(this.value)" /> Alberta</label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <label for "SK" style = "font-size:1.2em; font-family: Times New Roman;">
-  <input type="radio" id="no" name="province" value="no" onchange="displayQuestion(this.value)" /> Saskatchewan</label>
-
+  &nbsp;&nbsp;&nbsp; <input type="radio" id="on" name="province" value="on"
+  onchange="displayQuestion(this.value)"/> Ontario</label>
+  <label>&nbsp;&nbsp;&nbsp; <input type="radio" id="bc" name="province" value="bc"
+  onchange="displayQuestion(this.value)"/> British Columbia</label>
+  <label>&nbsp;&nbsp;&nbsp; <input type="radio" id="ab" name="province" value="ab"
+  onchange="displayQuestion(this.value)"/> Alberta</label>
+  <label>&nbsp;&nbsp;&nbsp; <input type="radio" id="sk" name="province" value="sk"
+  onchange="displayQuestion(this.value)"/> Saskatchewan</label>
 
 </div>
    <hr/>
-  <div id="yesQuestion" style="display:none;"><br/>
+
+   <!--Block of Trades opened when Ontario is selected-->
+  <div id="onQuestion" style="display:none;"><br/>
    <div class="question">
         <h2 style="margin-bottom:0em;">Areas of Service </h2>
         <p>(select all that apply)</p>
@@ -63,22 +62,121 @@
       <hr/>
   </div>
 
+  <!--Block of Trades opened when British Columbia is selected-->
+ <div id="bcQuestion" style="display:none;"><br/>
+  <div class="question">
+       <h2 style="margin-bottom:0em;">Areas of Service </h2>
+       <p>(select all that apply)</p>
+ <ul class="checkbox-grid">
+
+
+   <li><input type="checkbox" name="text1" value="value1" /><label for="text1" class="indented-checkbox-text"> Vancouver</label></li>
+   <li><input type="checkbox" name="text2" value="value2" /><label for="text2" class="indented-checkbox-text"> Victoria</label></li>
+   <li><input type="checkbox" name="text3" value="value3" /><label for="text3" class="indented-checkbox-text"> Kelowna</label></li>
+   <li><input type="checkbox" name="text4" value="value4" /><label for="text4" class="indented-checkbox-text"> Surrey</label></li>
+   <li><input type="checkbox" name="text5" value="value5" /><label for="text5" class="indented-checkbox-text"> Coquitlam</label></li>
+   <li><input type="checkbox" name="text6" value="value6" /><label for="text6" class="indented-checkbox-text"> Abbotsford</label></li>
+   <li><input type="checkbox" name="text7" value="value7" /><label for="text7" class="indented-checkbox-text"> Richmond</label></li>
+   <li><input type="checkbox" name="text8" value="value8" /><label for="text8" class="indented-checkbox-text"> Burnaby</label></li>
+
+
+
+ </ul>
+     </div>
+     <hr/>
+ </div>
+
+ <!--Block of Trades opened when Alberta is selected-->
+<div id="abQuestion" style="display:none;"><br/>
+ <div class="question">
+      <h2 style="margin-bottom:0em;">Areas of Service </h2>
+      <p>(select all that apply)</p>
+<ul class="checkbox-grid">
+
+
+  <li><input type="checkbox" name="text1" value="value1" /><label for="text1" class="indented-checkbox-text"> Calgary</label></li>
+  <li><input type="checkbox" name="text2" value="value2" /><label for="text2" class="indented-checkbox-text"> Edmonton</label></li>
+  <li><input type="checkbox" name="text3" value="value3" /><label for="text3" class="indented-checkbox-text"> Red Deer</label></li>
+  <li><input type="checkbox" name="text4" value="value4" /><label for="text4" class="indented-checkbox-text"> Lethbridge</label></li>
+  <li><input type="checkbox" name="text5" value="value5" /><label for="text5" class="indented-checkbox-text"> Strathcona County</label></li>
+  <li><input type="checkbox" name="text6" value="value6" /><label for="text6" class="indented-checkbox-text"> Wood Buffalo</label></li>
+  <li><input type="checkbox" name="text7" value="value7" /><label for="text7" class="indented-checkbox-text"> St.Albert</label></li>
+  <li><input type="checkbox" name="text8" value="value8" /><label for="text8" class="indented-checkbox-text"> Medicine Hat</label></li>
+
+
+
+</ul>
+    </div>
+    <hr/>
+</div>
+
+<!--Block of Trades opened when Saskatchewan is selected-->
+<div id="skQuestion" style="display:none;"><br/>
+<div class="question">
+     <h2 style="margin-bottom:0em;">Areas of Service </h2>
+     <p>(select all that apply)</p>
+<ul class="checkbox-grid">
+
+
+ <li><input type="checkbox" name="text1" value="value1" /><label for="text1" class="indented-checkbox-text"> Saskatoon</label></li>
+ <li><input type="checkbox" name="text2" value="value2" /><label for="text2" class="indented-checkbox-text"> Regina</label></li>
+ <li><input type="checkbox" name="text3" value="value3" /><label for="text3" class="indented-checkbox-text"> Prince Albert</label></li>
+ <li><input type="checkbox" name="text4" value="value4" /><label for="text4" class="indented-checkbox-text"> Moose Jaw</label></li>
+ <li><input type="checkbox" name="text5" value="value5" /><label for="text5" class="indented-checkbox-text"> Swift Current</label></li>
+ <li><input type="checkbox" name="text6" value="value6" /><label for="text6" class="indented-checkbox-text"> Yorkton</label></li>
+ <li><input type="checkbox" name="text7" value="value7" /><label for="text7" class="indented-checkbox-text"> North Battleford</label></li>
+ <li><input type="checkbox" name="text8" value="value8" /><label for="text8" class="indented-checkbox-text"> Estevan</label></li>
+
+
+
+</ul>
+   </div>
+   <hr/>
+</div>
+
+<!--When a province other than Ontario selected, nothing happens-->
   <div id="noQuestion" style="display:none;"><br/>
 
   </div>
-
+<!--The JavaScript for showing trades option when Ontario is selected-->
   <script>
     function displayQuestion(answer) {
 
   document.getElementById(answer + 'Question').style.display = "block";
 
-  if (answer == "yes") { // hide the div that is not selected
+  if (answer == "on") { // hide the div that is not selected
 
-    document.getElementById('noQuestion').style.display = "none";
+    document.getElementById('bcQuestion').style.display = "none";
+    document.getElementById('abQuestion').style.display = "none";
+    document.getElementById('skQuestion').style.display = "none";
 
-  } else  {
+  }
+  else if (answer == "bc") { // hide the div that is not selected
 
-    document.getElementById('yesQuestion').style.display = "none";
+    document.getElementById('onQuestion').style.display = "none";
+    document.getElementById('abQuestion').style.display = "none";
+    document.getElementById('skQuestion').style.display = "none";
+
+  }
+  else if (answer == "ab") { // hide the div that is not selected
+
+    document.getElementById('onQuestion').style.display = "none";
+    document.getElementById('bcQuestion').style.display = "none";
+    document.getElementById('skQuestion').style.display = "none";
+
+  }
+  else if (answer == "sk") { // hide the div that is not selected
+
+    document.getElementById('onQuestion').style.display = "none";
+    document.getElementById('bcQuestion').style.display = "none";
+    document.getElementById('abQuestion').style.display = "none";
+
+  }else  {
+
+    document.getElementById('onQuestion').style.display = "none";
+    document.getElementById('bcQuestion').style.display = "none";
+    document.getElementById('abQuestion').style.display = "none";
+    document.getElementById('skQuestion').style.display = "none";
 
   }
 
@@ -86,7 +184,7 @@
 
   </script>
 
-
+<!--Type of Work -->
       <div class="question">
         <h2>Type of work?</h2>
         <div class="checkbox">
@@ -104,7 +202,7 @@
       </div>
       <hr/>
 
-
+<!--Union or not-->
       <div class="question">
         <h2>Is your company unionized?</h2>
         <div class="checkbox">
@@ -118,7 +216,7 @@
       </div>
       <hr/>
     </form>
-
+<!--Form ends, submit button-->
       <div id="last_block">
         <div id="buttons">
         <button type="button" class="continue_button">Submit</button>
