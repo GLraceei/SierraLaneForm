@@ -11,7 +11,7 @@
     <div id="nav_bar">
     <img src="./website/image001.png" alt="Sierra Lane Logo" id="logo" >
   </div>
-
+<!--Form PT 2 Begins-->
   <div id="background">
     <div id="form">
       <hr class="hr_2"></hr>
@@ -20,14 +20,24 @@
       </div>
       <hr/>
 
+<!--Province Serviced-->
       <form>
         <div class ="question">
-    <h2 style="margin-bottom:0em;">Do you service in Ontario?</h2>
+    <h2 style="margin-bottom:0em;">Which Province do you predominately service?</h2>
 
   <label><br/>
-    <input type="radio" id="yes" name="yesOrNo" value="yes" onchange="displayQuestion(this.value)" />Yes</label>
-  <label>
-    <input type="radio" id="no" name="yesOrNo" value="no" onchange="displayQuestion(this.value)" />No</label>
+  &nbsp;&nbsp;&nbsp; <input type="radio" id="yes" name="province" value="yes" onchange="displayQuestion(this.value)"/> Ontario</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for "BC" style = "font-size:1.2em; font-family: Times New Roman;">
+    <input type="radio" id="no" name="province" value="no" onchange="displayQuestion(this.value)" /> British Columbia</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for "AB" style = "font-size:1.2em; font-family: Times New Roman;">
+    <input type="radio" id="no" name="province" value="no" onchange="displayQuestion(this.value)" /> Alberta</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for "SK" style = "font-size:1.2em; font-family: Times New Roman;">
+  <input type="radio" id="no" name="province" value="no" onchange="displayQuestion(this.value)" /> Saskatchewan</label>
+
+
 </div>
    <hr/>
   <div id="yesQuestion" style="display:none;"><br/>
@@ -37,14 +47,14 @@
 <ul class="checkbox-grid">
 
 
-    <li><input type="checkbox" name="text1" value="value1" /><label for="text1" class="indented-checkbox-text">Toronto</label></li>
-    <li><input type="checkbox" name="text2" value="value2" /><label for="text2" class="indented-checkbox-text">GTA</label></li>
-    <li><input type="checkbox" name="text3" value="value3" /><label for="text3" class="indented-checkbox-text">Mississuaga</label></li>
-    <li><input type="checkbox" name="text4" value="value4" /><label for="text4" class="indented-checkbox-text">Brampton</label></li>
-    <li><input type="checkbox" name="text5" value="value5" /><label for="text5" class="indented-checkbox-text">London</label></li>
-    <li><input type="checkbox" name="text6" value="value6" /><label for="text6" class="indented-checkbox-text">North Bay</label></li>
-    <li><input type="checkbox" name="text7" value="value7" /><label for="text7" class="indented-checkbox-text">Barrie</label></li>
-    <li><input type="checkbox" name="text8" value="value8" /><label for="text8" class="indented-checkbox-text">Thunder Bay</label></li>
+    <li><input type="checkbox" name="text1" value="value1" /><label for="text1" class="indented-checkbox-text"> Toronto</label></li>
+    <li><input type="checkbox" name="text2" value="value2" /><label for="text2" class="indented-checkbox-text"> GTA</label></li>
+    <li><input type="checkbox" name="text3" value="value3" /><label for="text3" class="indented-checkbox-text"> Mississuaga</label></li>
+    <li><input type="checkbox" name="text4" value="value4" /><label for="text4" class="indented-checkbox-text"> Brampton</label></li>
+    <li><input type="checkbox" name="text5" value="value5" /><label for="text5" class="indented-checkbox-text"> London</label></li>
+    <li><input type="checkbox" name="text6" value="value6" /><label for="text6" class="indented-checkbox-text"> North Bay</label></li>
+    <li><input type="checkbox" name="text7" value="value7" /><label for="text7" class="indented-checkbox-text"> Barrie</label></li>
+    <li><input type="checkbox" name="text8" value="value8" /><label for="text8" class="indented-checkbox-text"> Thunder Bay</label></li>
 
 
 
@@ -66,7 +76,7 @@
 
     document.getElementById('noQuestion').style.display = "none";
 
-  } else if (answer == "no") {
+  } else  {
 
     document.getElementById('yesQuestion').style.display = "none";
 
@@ -98,11 +108,11 @@
       <div class="question">
         <h2>Is your company unionized?</h2>
         <div class="checkbox">
-          <input type="checkbox" id="union_yes" name="unionized" value="yes">
+          <input type="radio" id="union_yes" name="unionized" value="yes">
           <label for="union_yes">Yes</label>
         </div>
         <div class="checkbox">
-          <input type="checkbox" id="union_no" name="unionized" value="yes">
+          <input type="radio" id="union_no" name="unionized" value="yes">
           <label for="union_no">No</label>
         </div>
       </div>
@@ -114,8 +124,9 @@
         <button type="button" class="continue_button">Submit</button>
         </div>
       </div>
-
     </div>
+
+
     <hr class="hr_2"></hr>
   </div>
 </body>
