@@ -1,3 +1,4 @@
+
 p{
   margin: 0;
   padding:0.4em;
@@ -76,6 +77,12 @@ label{
   font-size: 1.2em;
 }
 
+ul{
+  margin:0;
+  height: auto;
+  overflow: hidden;
+}
+
 #nav_bar{
   height: 60px;
   color: white;
@@ -121,11 +128,6 @@ label{
   padding: 1.5em 5em 3em 5em;
 }
 
-#welcome_panel{
-  padding: 3em 6em 3em 6em;
-
-}
-
 #last_block{
   padding: 3em 5em 4.5em 5em;
   height:auto;
@@ -133,12 +135,6 @@ label{
 
 #buttons{
   float:right;
-  margin-top:-1em;
-}
-
-#buttons_start{
-  text-align:center;
-  margin-top:-2em;
 }
 
 .name{
@@ -171,10 +167,35 @@ label{
   width:100%;
 }
 
-.start_button{
-  font-size: 2em;
-  padding: 0.5em 1em;
-  margin-left: 0;
+.link_button{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1em 0.8em 1em 0.8em;
+  border: 0;
+  border-radius: 12px;
+}
+
+.link_button:hover{
+  color: #ffffff;
+}
+
+.submit_button{
+  height: auto;
+  border: none;
+  background: none;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1em 0.8em 1em 0.8em;
+  border-radius: 12px;
+}
+
+.submit_button:hover{
+  cursor:pointer;
 }
 
 @media only screen and (max-width: 768px){
