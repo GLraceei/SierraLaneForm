@@ -4,59 +4,64 @@
       <head>
         <!-- no favicon -->
         <title>Trades Portal</title>
+        <!-- has a mobile look but the rest of the site does not -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <link rel="stylesheet" href="style.css">
       </head>
       <hr class="hr_2"></hr>
       <div class="title_card">
         <h1><center>Estimator Contact Information</center></h1>
-        <p><center><font size = "4">Please fill this out according to the contact
-          information of the estimator.</font><center></p>
+        <h4><center>Please fill this out according to the contact
+          information of the estimator.<center></h3>
       </div>
       <hr/>
 
-      <form id="test-form">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSesJje6s0T-aslEako0rAores3PeHpnaA03PCyd9ujlyh5V1A/formResponse">
         <div class="question">
           <h2>Company Name</h2>
-            <input type="text" name="company_name" alt="CompanyName" style="width:45%;" placeholder="Company Name">
-
+          <div class="col_2">
+            <input class="fill_in" type="text" name="entry.1768173800" alt="CompanyName" placeholder="Company Name">
+          </div>
         </div>
         <hr/>
 
       <div class="question">
         <h2>Estimator Name</h2>
         <div class="col_2">
-          <input type="text" name="first_name" alt="First name." class="name" placeholder="First Name">
+          <input type="text" name="entry.510541359" alt="First name." class="fill_in" placeholder="First Name">
         </div><!-- comment
          --><div class="col_2">
-          <input type="text" name="last_name" class="name" style="margin-left:5%;" alt="Last name." placeholder="Last Name">
+          <input type="text" name="entry.1586660266" class="fill_in" alt="Last name." placeholder="Last Name">
         </div>
       </div>
       <hr/>
 
       <div class="question">
         <h2>Phone number</h2>
-          <input type="tel" name="phone_number" alt="Phone number." style="width:45%;" placeholder="Phone Number">
+        <div class="col_2">
+          <input type="tel" name="entry.329778835" alt="Phone number." class="fill_in" placeholder="Phone Number">
           <!--  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+        </div>
       </div>
       <hr/>
 
       <div class="question">
         <h2>Email</h2>
-          <input type="text" name="email" alt="Email."style="width:45%;" placeholder="Email">
+        <div class="col_2">
+          <input type="text" name="entry.706828399" alt="Email." class="fill_in" placeholder="Email">
+        </div>
       </div>
       <hr/>
 
       <div id="last_block">
         <div id="buttons">
-          <li><a href="?a=sub2" class="link_button" style="color: #ffffff;">Continue</a></li>
-        </div>
+          <a href="?a=sub2" class="link_button" style="color: #ffffff;">Continue</a>
       </div>
     </div>
 
     </form>
 
-
-
     <hr class="hr_2"></hr>
 
   </div>
+</div>
