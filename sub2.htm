@@ -11,33 +11,37 @@
       function displayQuestion(answer) {
       document.getElementById(answer + 'Question').style.display = "block";
       if (answer == "Ontario") { // hide the div that is not selected
-        document.getElementById('bcQuestion').style.display = "none";
-        document.getElementById('abQuestion').style.display = "none";
-        document.getElementById('skQuestion').style.display = "none";
+        document.getElementById('British ColumbiaQuestion').style.display = "none";
+        document.getElementById('AlbertaQuestion').style.display = "none";
+        document.getElementById('SaskatchewanQuestion').style.display = "none";
       }
       else if (answer == "British Columbia") { // hide the div that is not selected
-        document.getElementById('onQuestion').style.display = "none";
-        document.getElementById('abQuestion').style.display = "none";
-        document.getElementById('skQuestion').style.display = "none";
+        document.getElementById('OntarioQuestion').style.display = "none";
+        document.getElementById('AlbertaQuestion').style.display = "none";
+        document.getElementById('SaskatchewanQuestion').style.display = "none";
       }
       else if (answer == "Alberta") { // hide the div that is not selected
-        document.getElementById('onQuestion').style.display = "none";
-        document.getElementById('bcQuestion').style.display = "none";
-        document.getElementById('skQuestion').style.display = "none";
+        document.getElementById('OntarioQuestion').style.display = "none";
+        document.getElementById('British ColumbiaQuestion').style.display = "none";
+        document.getElementById('SaskatchewanQuestion').style.display = "none";
       }
       else if (answer == "Saskatchewan") { // hide the div that is not selected
-        document.getElementById('onQuestion').style.display = "none";
-        document.getElementById('bcQuestion').style.display = "none";
-        document.getElementById('abQuestion').style.display = "none";
+        document.getElementById('OntarioQuestion').style.display = "none";
+        document.getElementById('British ColumbiaQuestion').style.display = "none";
+        document.getElementById('AlbertaQuestion').style.display = "none";
       }else  {
-        document.getElementById('onQuestion').style.display = "none";
-        document.getElementById('bcQuestion').style.display = "none";
-        document.getElementById('abQuestion').style.display = "none";
-        document.getElementById('skQuestion').style.display = "none";
+        document.getElementById('OntarioQuestion').style.display = "none";
+        document.getElementById('British ColumbiaQuestion').style.display = "none";
+        document.getElementById('AlbertaQuestion').style.display = "none";
+        document.getElementById('SaskatchewanQuestion').style.display = "none";
       }
   }
 
     </script>
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) {window.location = '?';}">
+  </iframe>
   </head>
 
       <hr class="hr_2"></hr>
@@ -47,7 +51,12 @@
       </div>
       <hr/>
 
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSesJje6s0T-aslEako0rAores3PeHpnaA03PCyd9ujlyh5V1A/formResponse">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSesJje6s0T-aslEako0rAores3PeHpnaA03PCyd9ujlyh5V1A/formResponse"
+      method="post" target="hidden_iframe" onsubmit="submitted=true">
+      <div class="title_card">
+        <h1><center>Company Information</center></h1>
+      </div>
+      <hr/>
         <div class ="question">
           <h2 style="margin-bottom:0em;">Which Province do you predominately service?</h2>
           <div class="label_grid">
@@ -58,7 +67,7 @@
             onchange="displayQuestion(this.value)"/> British Columbia</label>
             <label>&nbsp;&nbsp;&nbsp; <input type="radio" id="Alberta" name="entry.984490827" value="Alberta"
             onchange="displayQuestion(this.value)"/> Alberta</label>
-            <label>&nbsp;&nbsp;&nbsp; <input type="radio" id="Saskatchwan" name="entry.984490827" value="Saskatchewan"
+            <label>&nbsp;&nbsp;&nbsp; <input type="radio" id="Saskatchewan" name="entry.984490827" value="Saskatchewan"
             onchange="displayQuestion(this.value)"/> Saskatchewan</label>
           </div>
       </div>
@@ -164,15 +173,18 @@
       <div class="question">
         <h2>Is your company unionized?</h2>
         <div class="checkbox">
-          <input type="radio" id="f1" name="unionized" value="Yes">
+          <input type="radio" id="f1" name="entry.1333150995" value="Yes">
           <label for="f1">Yes</label>
         </div>
         <div class="checkbox">
-          <input type="radio" id="f2" name="unionized" value="No">
+          <input type="radio" id="f2" name="entry.1333150995" value="No">
           <label for="f2">No</label>
         </div>
       </div>
       <hr/>
+
+      <div style="display:none;">
+      </div>
 
       <div id="last_block">
         <div id="buttons">
