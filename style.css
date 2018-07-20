@@ -62,12 +62,13 @@ button{
 }
 
 input{
+  background: none;
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   border-width: 1px;
   border-color: #333333;
   border-radius: 8px;
-  height: 1em;
+  /* height: 1em; */
   padding: 0.5em;
   outline: none;
   text-align: left;
@@ -212,6 +213,7 @@ ul{
 
 .fill_in{
   width: 90%;
+  height: 1em;
 }
 
 @media only screen and (max-width: 768px){

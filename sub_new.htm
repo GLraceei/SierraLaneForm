@@ -4,42 +4,7 @@
       <head>
         <!-- no favicon -->
         <title>Trades Portal</title>
-        <script>
-        var currentTab = 0; // Current tab is set to be the first tab (0)
-        showTab(currentTab); // Display the current tab
 
-        function showTab(n) {
-          // This function will display the specified tab of the form ...
-          var x = document.getElementsByClassName("tab");
-         x[n].style.display = "block";
-          // ... and fix the Previous/Next buttons:
-          if (n == 0) {
-            document.getElementById("continueBut").style.display = "block";
-            document.getElementById("submitBut").style.display = "none";
-          } else {
-            document.getElementById("continueBut").style.display = "none";
-            document.getElementById("submitBut").style.display = "block";
-          }
-        }
-        function nextPrev(n) {
-          // This function will figure out which tab to display
-          var x = document.getElementsByClassName("tab");
-          // Exit the function if any field in the current tab is invalid:
-          if (n == 1) return false;
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          // if you have reached the end of the form... :
-          // if (currentTab >= x.length) {
-          //   //...the form gets submitted:
-          //   document.getElementById("regForm").submit();
-          //   return false;
-          // }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-        }
-        </script>
         <script>
           function displayQuestion(answer) {
           document.getElementById(answer + 'Question').style.display = "block";
@@ -47,21 +12,61 @@
             document.getElementById('British ColumbiaQuestion').style.display = "none";
             document.getElementById('AlbertaQuestion').style.display = "none";
             document.getElementById('SaskatchewanQuestion').style.display = "none";
+            var letter="b";
+            for(var k =0; k<3; k++){
+            if(k==1)
+              letter="c";
+            else if(k==2)
+              letter="d";
+              for(var i=1; i<9;i++){
+                document.getElementById(letter+i).checked = false;
+              }
+            }
           }
           else if (answer == "British Columbia") { // hide the div that is not selected
             document.getElementById('OntarioQuestion').style.display = "none";
             document.getElementById('AlbertaQuestion').style.display = "none";
             document.getElementById('SaskatchewanQuestion').style.display = "none";
+            var letter="a";
+            for(var k =0; k<3; k++){
+            if(k==1)
+              letter="c";
+            else if(k==2)
+              letter="d";
+              for(var i=1; i<9;i++){
+                document.getElementById(letter+i).checked = false;
+              }
+            }
           }
           else if (answer == "Alberta") { // hide the div that is not selected
             document.getElementById('OntarioQuestion').style.display = "none";
             document.getElementById('British ColumbiaQuestion').style.display = "none";
             document.getElementById('SaskatchewanQuestion').style.display = "none";
+            var letter="b";
+            for(var k =0; k<3; k++){
+            if(k==1)
+              letter="a";
+            else if(k==2)
+              letter="d";
+              for(var i=1; i<9;i++){
+                document.getElementById(letter+i).checked = false;
+              }
+            }
           }
           else if (answer == "Saskatchewan") { // hide the div that is not selected
             document.getElementById('OntarioQuestion').style.display = "none";
             document.getElementById('British ColumbiaQuestion').style.display = "none";
             document.getElementById('AlbertaQuestion').style.display = "none";
+            var letter="b";
+            for(var k =0; k<3; k++){
+            if(k==1)
+              letter="c";
+            else if(k==2)
+              letter="a";
+              for(var i=1; i<9;i++){
+                document.getElementById(letter+i).checked = false;
+              }
+            }
           }else  {
             document.getElementById('OntarioQuestion').style.display = "none";
             document.getElementById('British ColumbiaQuestion').style.display = "none";
@@ -72,7 +77,7 @@
         </script>
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-        onload="if(submitted) {window.location = '?';}">
+        onload="if(submitted) {window.location = '?a=thank_you';}">
       </iframe>
         <!-- has a mobile look but the rest of the site does not -->
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -94,7 +99,7 @@
         <div class="question">
           <h2>Company Name</h2>
           <div class="col_2">
-            <input class="fill_in" type="text" name="entry.1768173800" alt="CompanyName" placeholder="Company Name">
+            <input class="fill_in" type="text" name="entry.482207147" alt="CompanyName" placeholder="Company Name">
           </div>
         </div>
         <hr/>
@@ -102,10 +107,10 @@
       <div class="question">
         <h2>Estimator Name</h2>
         <div class="col_2">
-          <input type="text" name="entry.510541359" alt="First name." class="fill_in" placeholder="First Name">
+          <input type="text" name="entry.1615212922" alt="First name." class="fill_in" placeholder="First Name">
         </div><!-- comment
          --><div class="col_2">
-          <input type="text" name="entry.1586660266" class="fill_in" alt="Last name." placeholder="Last Name">
+          <input type="text" name="entry.1635625779" class="fill_in" alt="Last name." placeholder="Last Name">
         </div>
       </div>
       <hr/>
@@ -113,7 +118,7 @@
       <div class="question">
         <h2>Phone number</h2>
         <div class="col_2">
-          <input type="tel" name="entry.329778835" alt="Phone number." class="fill_in" placeholder="Phone Number">
+          <input type="tel" name="entry.1091014162" alt="Phone number." class="fill_in" placeholder="xxx-xxx-xxxx">
         </div>
       </div>
       <hr/>
@@ -121,7 +126,7 @@
       <div class="question">
         <h2>Email</h2>
         <div class="col_2">
-          <input type="text" name="entry.706828399" alt="Email." class="fill_in" placeholder="Email">
+          <input type="text" name="entry.1383238310" alt="Email." class="fill_in" placeholder="Email">
         </div>
       </div>
     </div>
@@ -175,10 +180,10 @@
             <li><input type="checkbox" id="b1" name="entry.1435182637" value="Vancouver" /><label for="b1" > Vancouver</label></li>
             <li><input type="checkbox" id="b2" name="entry.1435182637" value="Victoria" /><label for="b2" > Victoria</label></li>
             <li><input type="checkbox" id="b3" name="entry.1435182637" value="Kelowna" /><label for="b3" > Kelowna</label></li>
-            <li><input type="checkbox" id="b4" name="entry.1435182637" value="Surrey" /><label for="b4" > Surrey</label></li>
+            <li><input type="checkbox" id="b4" name="entry.1435182637" value="Prince George" /><label for="b4" > Prince George</label></li>
             <li><input type="checkbox" id="b5" name="entry.1435182637" value="Coquitlam" /><label for="b5" > Coquitlam</label></li>
             <li><input type="checkbox" id="b6" name="entry.1435182637" value="Abbotsford" /><label for="b6" > Abbotsford</label></li>
-            <li><input type="checkbox" id="b7" name="entry.1435182637" value="Richmond" /><label for="b7" > Richmond</label></li>
+            <li><input type="checkbox" id="b7" name="entry.1435182637" value="Courtenay" /><label for="b7" > Courtenay</label></li>
             <li><input type="checkbox" id="b8" name="entry.1435182637" value="Burnaby" /><label for="b8" > Burnaby</label></li>
           </ul>
           </div>
@@ -193,9 +198,9 @@
          <ul class="checkbox-grid">
            <li><input type="checkbox" id="c1" name="entry.1435182637" value="Calgary" /><label for="c1" > Calgary</label></li>
            <li><input type="checkbox" id="c2" name="entry.1435182637" value="Edmonton" /><label for="c2" > Edmonton</label></li>
-           <li><input type="checkbox" id="c3" name="entry.1435182637" value="Red Deer" /><label for="c3" > Red Deer</label></li>
+           <li><input type="checkbox" id="c3" name="entry.1435182637" value="Grand Prairie" /><label for="c3" > Grand Prairie</label></li>
            <li><input type="checkbox" id="c4" name="entry.1435182637" value="Lethbridge" /><label for="c4" > Lethbridge</label></li>
-           <li><input type="checkbox" id="c5" name="entry.1435182637" value="Strathcona County" /><label for="c5" > Strathcona County</label></li>
+           <li><input type="checkbox" id="c5" name="entry.1435182637" value="Fort McMurray" /><label for="c5" > Fort McMurray</label></li>
            <li><input type="checkbox" id="c6" name="entry.1435182637" value="Wood Buffalo" /><label for="c6" > Wood Buffalo</label></li>
            <li><input type="checkbox" id="c7" name="entry.1435182637" value="St.Albert" /><label for="c7" > St.Albert</label></li>
            <li><input type="checkbox" id="c8" name="entry.1435182637" value="Medicine Hat" /><label for="c8" > Medicine Hat</label></li>
@@ -255,7 +260,6 @@
           <label for="f2">No</label>
         </div>
       </div>
-      <hr/>
 
       <div style="display:none;">
       </div>
@@ -264,9 +268,8 @@
 
       <div id="last_block">
         <div id="buttons">
-          <!-- <a href="?a=sub2" id="continueBut" class="link_button" style="color: #ffffff;">Continue</a> -->
-          <input type="button" id="continueBut" class="link_button" style="color: #ffffff;" value="Continue" />
-
+          <input type="button" id="continueBut" class="link_button" onclick="nextPrev(1); topFunction();" value="Continue" />
+          <input type="button" id="prevBut" class="link_button" onclick="nextPrev(-1)" style= "background-color: #666666;"value="Previous">
           <input type="submit" id="submitBut" class="submit_button" value="Submit" />
       </div>
     </div>
@@ -274,6 +277,40 @@
     </form>
 
     <hr class="hr_2"></hr>
+    <script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
 
+    function showTab(n) {
+      // This function will display the specified tab of the form ...
+      var x = document.getElementsByClassName("tab");
+     x[n].style.display = "block";
+      // ... and fix the Previous/Next buttons:
+      if (n == 0) {
+        x[1].style.display = "none";
+        document.getElementById("continueBut").style.display = "block";
+        document.getElementById("prevBut").style.display = "none";
+        document.getElementById("submitBut").style.display = "none";
+      } else {
+        document.getElementById("continueBut").style.display = "none";
+        document.getElementById("prevBut").style.display = "inline-block";
+        document.getElementById("submitBut").style.display = "inline-block";
+      }
+    }
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      showTab(currentTab);
+    }
+    </script>
+    <script>
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
   </div>
 </div>
